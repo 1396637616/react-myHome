@@ -18,6 +18,7 @@ const { Header, Content, Sider } = Layout;
 
 
 class App extends Component {
+	
 	 state = {
 	    collapsed: false,
 	  };
