@@ -23,7 +23,6 @@ class App extends Component {
     constructor(props, context) {
         super(props, context);
     }
-
     componentWillMount() {
         document.body.style.margin = "0px";
         // 这是防止页面被拖拽
