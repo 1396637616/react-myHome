@@ -1,0 +1,21 @@
+#components-layout-demo-side .logo {
+  height: 32px;
+  background: rgba(255,255,255,.2);
+  margin: 16px;
+}
+.but{
+
+	width: 100%;
+	height:100%;
+	background: rgba(0,0,0,0);
+	position:absolute;
+  top: 100px;
+	z-index: 50;
+}
+.ant-menu-inline{
+	background: rgba(0,0,0,0)!important;
+}
+.ant-menu-item-selected{
+	background: rgba(0,0,0,0)!important;
+	
+}
