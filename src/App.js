@@ -8,9 +8,9 @@ import 'antd/dist/antd.css';
 import './App.css';
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import style from "./index.css";
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu, Icon } from 'antd';
 const { SubMenu } = Menu;
-const { Header, Content, Sider } = Layout;
+const { Content, Sider } = Layout;
 
 class App extends Component {
     state = {
@@ -18,11 +18,11 @@ class App extends Component {
     };
     onCollapse = (collapsed) => {
         this.setState({ collapsed });
-    }
+    };
 
-    constructor(props, context) {
-        super(props, context);
-    }
+    // constructor(props, context) {
+    //     super(props, context);
+    // }
     componentWillMount() {
         document.body.style.margin = "0px";
         // 这是防止页面被拖拽
@@ -38,10 +38,6 @@ class App extends Component {
                     <canvas id="buffer"></canvas>
                     <canvas id="h-canvas"></canvas>
                 </div>
-                {/* <div className="landscape"></div>
-                <div className="filter"></div>
-                <canvas id="canvas"></canvas>
-                <div className="test"></div> */}
                 <div className="but">
                     <Layout style={{ height: '100%', background: 'rgba(0,0,0,.1)' }}>
 
@@ -61,15 +57,26 @@ class App extends Component {
                                         <Menu.Item key="3"><Link to="/callMe">联系我</Link></Menu.Item>
                                         <Menu.Item key="4"><Link to="/zone">个人主页</Link></Menu.Item>
                                     </SubMenu>
-                                    <SubMenu key="sub2" title={<span><Icon type="laptop" />我的足迹</span>}>
+                                    <SubMenu key="sub2" title={<span><Icon type="laptop" />css</span>}>
                                         <Menu.Item key="5"><Link to="/zuji">足迹</Link></Menu.Item>
                                         <Menu.Item key="6"><Link to="/work">工作</Link></Menu.Item>
 
                                     </SubMenu>
-                                    <SubMenu key="sub3" title={<span><Icon type="notification" />学习心得</span>}>
+                                    <SubMenu key="sub3" title={<span><Icon type="notification" />vue</span>}>
                                         <Menu.Item key="9"><Link to="/jishu">技术栈</Link></Menu.Item>
                                         <Menu.Item key="10"><Link to="/collect">技术收藏</Link></Menu.Item>
-
+                                    </SubMenu>
+                                    <SubMenu key="sub4" title={<span><Icon type="notification" />webpack</span>}>
+                                        <Menu.Item key="11"><Link to="/jishu">技术栈</Link></Menu.Item>
+                                        <Menu.Item key="12"><Link to="/collect">技术收藏</Link></Menu.Item>
+                                    </SubMenu>
+                                    <SubMenu key="sub5" title={<span><Icon type="notification" />node.js</span>}>
+                                        <Menu.Item key="13"><Link to="/jishu">技术栈</Link></Menu.Item>
+                                        <Menu.Item key="14"><Link to="/collect">技术收藏</Link></Menu.Item>
+                                    </SubMenu>
+                                    <SubMenu key="sub6" title={<span><Icon type="notification" />3d渲染</span>}>
+                                        <Menu.Item key="15"><Link to="/jishu">技术栈</Link></Menu.Item>
+                                        <Menu.Item key="16"><Link to="/collect">技术收藏</Link></Menu.Item>
                                     </SubMenu>
                                 </Menu>
                             </Sider>

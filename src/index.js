@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import { Link,Router,Route,IndexRoute,browserHistory} from "react-router"
+import {Router,Route,IndexRoute,browserHistory} from "react-router"
 import Myself from "./components/myself"
 import Welcome from "./components/welcome"
 import Jisu from "./components/jisu"

@@ -50,7 +50,7 @@ body {
 .canvas {
     height: 100px;
     width: 100%;
-    background:rgba(40, 82, 130, 0.4);
+    background: rgba(40, 82, 130, 0.4);
     position: absolute;
     top: 0;
     z-index: 10;

@@ -27,8 +27,9 @@ function huabu() {
         "life isn't about waiting", "for the storm to pass", "it's about learning", "to dance in the rain"
     ];
 
+    // eslint-disable-next-line
     text.map((t, i) => {
-        text[i] = t.toUpperCase();
+        text[i] = t.toUpperCase(); 
     });
 
     class Line {
@@ -119,6 +120,7 @@ function huabu() {
         rid = window.requestAnimationFrame(Frame);
 
         ctx.clearRect(-cw, -ch, 2 * cw, 2 * ch);
+        // eslint-disable-next-line
         points.map((p, i) => {
             p.update();
             p.draw();
@@ -127,7 +129,8 @@ function huabu() {
             }
         });
 
-        if (frames % speed == 0) {
+        if (frames % speed === 0) {
+            // eslint-disable-next-line
             line.letters[index].points.map(p => {
                 p.pos = { x: p.x, y: p.y };
                 p.alp = 1;
@@ -136,7 +139,7 @@ function huabu() {
             index++;
         }
 
-        if (index == line.letters.length) {
+        if (index === line.letters.length) {
             numLine++;
             line = lines[numLine % text.length];
             index = 0;
